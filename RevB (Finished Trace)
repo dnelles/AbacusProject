@@ -1,0 +1,183 @@
+function preload(){
+//img1 = loadImage("Abacus.jpg")
+}
+
+function setup() {
+  createCanvas(600,500);
+}
+// Print coords/mouse click
+	function mousePressed() {
+  	print("mouseX=", mouseX, "mouseY=", mouseY);
+	}
+
+function draw() {
+  background(240);
+  //image(img1,0,0,400,300);
+
+ // Top right text box
+  fill(255);
+  rect(415,20,175,75);
+  fill(0);
+  textSize(12);
+  text("Example text",425,35);
+  
+  // Bottom right text box
+  fill(255);
+  rect(390,350,200,100);
+  fill(0);
+  textSize(12);
+  text("Example text",400,380);
+	
+//Abacus frame (outline)
+	fill(111,85,57);//Remove the transparency here!
+	  rect(20,15,355,265,10);
+	
+//Brackets (Left then Right)
+	
+	//Left Bracket
+	fill(151,77,45);
+	beginShape();
+		vertex(20,94);
+		vertex(34,94);
+		vertex(34,101);
+		vertex(105,102);
+		vertex(119,110);
+		vertex(105,118);
+		vertex(34,118);
+		vertex(34,126);
+		vertex(20,126);
+	endShape();	
+	
+	//Left Bracket Screws
+	fill(0);
+    ellipse(28,100,5);
+    ellipse(28,120,5);
+    ellipse(63,110,5);
+    ellipse(105,110,5);
+	
+	//Right Bracket
+	fill(151,77,45);
+	beginShape();
+		vertex(373,94);
+		vertex(357,94);
+		vertex(357,100);
+		vertex(288,102);
+		vertex(275,110);
+		vertex(288,118);
+		vertex(357,123);
+		vertex(357,126);
+		vertex(373,126);
+	endShape();
+
+	//Right Bracket Screws
+	fill(0);
+    ellipse(366,99,5);
+    ellipse(366,119,5);
+    ellipse(330,110,5);
+    ellipse(290,110,5);
+	
+	
+	
+	//Upper section
+		fill(255,100);//Remove transparency here!
+		  quad(35,102,35,30,358,30,358,102);
+
+	//Lower section
+		fill(255,100);//Remove transparency here!
+		  quad(35,118,358,118,358,265,35,265);
+
+//Upper bead rods (left to right)
+	fill(255,192,0); //Gold
+    quad(53,30,59,30,59,102,53,102);
+    quad(88,30,94,30,94,102,88,102);
+    quad(122,30,128,30,128,102,122,102);
+    quad(157,30,163,30,163,102,157,102);
+    quad(194,30,200,30,200,102,194,102);
+    quad(229,30,235,30,235,102,229,102);
+    quad(266,30,272,30,272,102,266,102);
+    quad(299,30,305,30,305,102,299,102);
+    quad(336,30,342,30,342,102,336,102);
+	
+//Lower bead rods (left to right)(Each rod is 6 units wide)
+	fill(255,192,0); //Gold
+    quad(53,118,59,118,59,265,53,265);
+    quad(88,118,94,118,94,265,88,265);
+    quad(122,118,128,118,128,265,122,265);
+    quad(157,118,163,118,163,265,157,265);
+    quad(194,118,200,118,200,265,194,265);
+    quad(229,118,235,118,235,265,229,265);
+    quad(266,118,272,118,272,265,266,265);
+    quad(299,118,305,118,305,265,299,265);
+    quad(336,118,342,118,342,265,335,265);
+
+	
+//Upper Beads (left to right)
+	fill(0);
+    rect(40,68,32,15,45);
+    rect(40,85,32,15,45);
+    rect(75,68,32,15,45);
+    rect(75,85,32,15,45);
+    rect(110,68,32,15,45);
+    rect(110,85,32,15,45);
+    rect(146,68,32,15,45);
+    rect(146,85,32,15,45);
+    rect(182,68,32,15,45);
+    rect(182,85,32,15,45);
+    rect(216,68,32,15,45);
+    rect(216,85,32,15,45);
+    rect(253,68,32,15,45);
+    rect(253,85,32,15,45);
+    rect(288,68,32,15,45);
+    rect(288,85,32,15,45);	
+    rect(323,68,32,15,45);
+    rect(323,85,32,15,45);
+
+//Lower Beads (Left to Right)
+	fill(0);
+    rect(40,178,32,15,45);
+    rect(40,195,32,15,45);
+    rect(40,212,32,15,45);
+    rect(40,229,32,15,45);
+    rect(40,246,32,15,45);
+    rect(75,178,32,15,45);
+    rect(75,195,32,15,45);
+    rect(75,212,32,15,45);
+    rect(75,229,32,15,45);
+    rect(75,246,32,15,45);
+    rect(110,178,32,15,45);
+    rect(110,195,32,15,45);
+    rect(110,212,32,15,45);
+    rect(110,229,32,15,45);
+    rect(110,246,32,15,45);
+    rect(144,178,32,15,45);
+    rect(144,195,32,15,45);
+    rect(144,212,32,15,45);
+    rect(144,229,32,15,45);
+    rect(144,246,32,15,45);
+    rect(181,178,32,15,45);
+    rect(181,195,32,15,45);
+    rect(181,212,32,15,45);
+    rect(181,229,32,15,45);
+    rect(181,246,32,15,45);
+    rect(216,178,32,15,45);
+    rect(216,195,32,15,45);
+    rect(216,212,32,15,45);
+    rect(216,229,32,15,45);
+    rect(216,246,32,15,45);
+    rect(253,178,32,15,45);
+    rect(253,195,32,15,45);
+    rect(253,212,32,15,45);
+    rect(253,229,32,15,45);
+    rect(253,246,32,15,45);
+    rect(287,178,32,15,45);
+    rect(287,195,32,15,45);
+    rect(287,212,32,15,45);
+    rect(287,229,32,15,45);
+    rect(287,246,32,15,45);
+    rect(323,178,32,15,45);
+    rect(323,195,32,15,45);
+    rect(323,212,32,15,45);
+    rect(323,229,32,15,45);
+    rect(323,246,32,15,45);
+	noStroke();
+}
